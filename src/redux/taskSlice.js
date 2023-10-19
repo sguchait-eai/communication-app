@@ -10,7 +10,7 @@ const initialState = {
   error: null,
 };
 
-const serverUrl = `http://localhost:5001`;
+const serverUrl = `http://localhost:5001/api/tasks`;
 
 // Create an asynchronous thunk to fetch all tasks
 export const fetchTasks = createAsyncThunk('tasks/fetchTasks', async () => {

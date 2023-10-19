@@ -17,13 +17,13 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton component={Link} to="/add-template">
       <ListItemIcon>
         <LocalPhoneIcon />
       </ListItemIcon>
       <ListItemText primary="Communication" />
-    </ListItemButton>
-    <ListItemButton>
+    </ListItemButton >
+    <ListItemButton >
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>

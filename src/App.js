@@ -2,6 +2,7 @@ import Login from "./pages/login";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Report from "./pages/Report";
+import CustomMessages from "./pages/CustomMessages"
 
 import './App.css';
 import {Route, Routes  } from "react-router-dom";
@@ -40,6 +41,7 @@ function App() {
             <Routes>
               <Route path="/home" element={<Home />} />
               <Route path="/reports" element={<Report />} />
+              <Route path="/add-template" element={<CustomMessages />} />
             </Routes>
           </Layout>
         ) 

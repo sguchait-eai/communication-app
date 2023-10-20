@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import RichTextEditor from '../components/custom-message/RichTextEditor';
 import Preview from '../components/custom-message/Preview';
+import Timeline from "../components/custom-message/Timeline"
 
 const CustomMessages = () => {
     const [tabValue, setTabValue] = useState("email");
@@ -60,6 +61,11 @@ const CustomMessages = () => {
                     </Box>
                 )}
 
+            </Box>
+            <Box>
+                {
+                   !previewMode ? <Timeline/> : ""
+                }
             </Box>
 
             <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
